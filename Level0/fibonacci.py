@@ -1,5 +1,6 @@
 count = int(input("how many numbers?"))
 
+# method 1
 print("method 1:", end=" ")
 if count == 0:
     print("invalid input")
@@ -15,6 +16,7 @@ else:
         n2 = n3
         print(n3, end=" ")
 
+# method 2
 print("\nmethod 2:", end = " ")
 fib = [0, 1]
 for i in range(2, count):
@@ -22,6 +24,7 @@ for i in range(2, count):
 print(fib)
 
 
+# method 3
 def fib_func(n):
     if n == 1: 
         return 0
